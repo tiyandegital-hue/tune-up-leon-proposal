@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo en vivo del bot — Tune Up León</title>
+<meta name="description" content="Prueba la demo interactiva del asistente de WhatsApp para Tune Up León: cotización con foto, agenda de cita y aviso de auto listo.">
+<meta property="og:title" content="Demo en vivo — Bot de WhatsApp para Tune Up León">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23ff7a1a'/><text x='16' y='23' font-family='Arial Black' font-size='18' text-anchor='middle' fill='%23170b02'>T</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Tune Up León — inicio">
+      <span class="brand-mark">Tune Up <em>León</em></span>
+      <span class="brand-sub">TALLER · LEÓN, GTO.</span>
+    </a>
+    <nav aria-label="Principal">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="bot.html" aria-current="page">Demo del bot</a></li>
+        <li><a href="como-funciona.html">Cómo funciona</a></li>
+        <li><a href="planes.html">Planes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-wa btn-sm" data-wa="Hola, vi la demo del bot para mi taller y quiero más información." href="#" target="_blank" rel="noopener">WhatsApp</a>
+    <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">☰</button>
+  </div>
+</header>
+
+<main id="main">
+  <section style="padding-bottom:0">
+    <div class="wrap">
+      <p class="eyebrow rv">Demo interactiva · Tócala, es de verdad</p>
+      <h1 class="rv">Pruébalo como<br>tu cliente.</h1>
+      <p class="lede rv" style="margin-top:18px">Abajo hay una <strong>simulación funcional</strong> del asistente de WhatsApp: elige un síntoma, manda la foto de ejemplo, recibe la cotización, agenda y mira el aviso de “auto listo”. <strong>Todo es ejemplo</strong> — así se sentiría el bot real en el teléfono de tu cliente.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap bot-layout">
+      <div class="rv">
+        <h2 style="font-size:clamp(24px,3vw,36px);margin-bottom:18px">Qué vas a ver</h2>
+        <ol style="color:var(--muted);font-size:15.5px;line-height:2; padding-left:20px;margin:0">
+          <li><strong style="color:var(--ink)">Cotización instantánea</strong> — el cliente describe el problema o manda foto.</li>
+          <li><strong style="color:var(--ink)">Agenda sin llamadas</strong> — elige horario disponible con un toque.</li>
+          <li><strong style="color:var(--ink)">Aviso de “auto listo”</strong> — el cliente sigue el avance sin llamar al taller.</li>
+        </ol>
+        <p style="margin-top:22px"><span class="ejemplo">Los precios y horarios son ejemplos</span></p>
+        <p style="color:var(--faint);font-size:13.5px">En el sistema real, los precios los defines tú, los horarios salen de tu agenda y los mensajes llegan al WhatsApp del cliente automáticamente.</p>
+        <div class="hero-cta">
+          <button class="btn btn-ghost" id="reiniciar" type="button">↻ Reiniciar demo</button>
+          <a class="btn" href="planes.html">Ver planes</a>
+        </div>
+      </div>
+      <div class="rv">
+        <div class="phone" id="chat-full" role="region" aria-label="Demostración completa del bot de WhatsApp" style="width:min(400px,100%)">
+          <div class="phone-head">
+            <span class="avatar" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.1-2.1 2.7-2.5zM6 18l1.2-1.2 2.1 2.1L8 20H6v-2z"/></svg></span>
+            <div class="who"><strong data-brand></strong><small>en línea</small></div>
+          </div>
+          <div class="chat" style="min-height:480px;max-height:560px" aria-live="polite"></div>
+          <form class="chat-foot" onsubmit="return false">
+            <input type="text" placeholder="Toca una opción…" aria-label="Escribe un mensaje" disabled>
+            <button class="send" type="submit" aria-label="Enviar"><svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <p class="eyebrow rv">¿Te gustó lo que viste?</p>
+      <h2 class="rv">Esto puede estar<br><span class="hl">en tu WhatsApp esta semana.</span></h2>
+      <div class="hero-cta rv">
+        <a class="btn btn-wa" data-wa="Hola, probé la demo del bot y quiero cotizarlo para mi taller." href="#" target="_blank" rel="noopener">Pedirlo por WhatsApp</a>
+        <a class="btn btn-ghost" href="como-funciona.html">Cómo se instala</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:14px;display:inline-flex">
+          <span class="brand-mark">Tune Up <em>León</em></span>
+        </a>
+        <p style="color:var(--faint);font-size:14px;max-width:34ch">Taller mecánico en León, Guanajuato. Afinaciones, frenos, suspensión y mantenimiento.</p>
+      </div>
+      <div>
+        <h4>Demo</h4>
+        <ul>
+          <li><a href="bot.html">Demo del bot</a></li>
+          <li><a href="como-funciona.html">Cómo funciona</a></li>
+          <li><a href="planes.html">Planes</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacidad.html">Aviso de privacidad</a></li>
+          <li><a href="terminos.html">Términos</a></li>
+          <li><a href="cookies.html">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© <span id="year"></span> <span data-brand></span> — Sitio de demostración · Propuesta de Tiyan Digital</span>
+      <span>Todo el contenido de esta demo está marcado como ejemplo.</span>
+    </div>
+  </div>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>

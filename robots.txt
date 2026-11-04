@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /privacidad.html
+Disallow: /terminos.html
+Disallow: /cookies.html
+Sitemap: https://tune-up-leon-proposal.vercel.app/sitemap.xml
